@@ -58,7 +58,16 @@ artifacts:
     - '**/*'
 ```
 
-Step 7 - Artifacts  --->  Create an S3 Bucket
+Step 7 - Now We need to Push our buildspec.yml into CodeCommit Repository
+
+```sh
+git status
+git add .
+git commit -m "my html file"
+git push origin master
+``` 
+
+Step 8 - Artifacts  --->  Create an S3 Bucket
 
 ```sh
 my-app-bucket-24
@@ -69,5 +78,5 @@ Artifacts packaging = .zip
 ```
 Untik CloudWatch Logs
 
-Step 8 - Click on start build.
+Step 9 - Click on start build.
 
