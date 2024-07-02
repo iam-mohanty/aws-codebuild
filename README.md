@@ -8,9 +8,22 @@ Step 2 - Project name
 my-app-build
 ```
 
-Step 3 - Source provider and Repository
+Step 3 - Source provider and Repository , Branch
 
 ```sh
 AWS-CodeCommit
 my-app
+master
+```
+
+Step 4 -  Operating System
+
+```sh
+Ubuntu
+```
+
+Step 5 -  Service Role  --->  New Service Role
+
+```sh
+codebuild-m-service-role
 ```
