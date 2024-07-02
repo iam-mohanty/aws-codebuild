@@ -63,7 +63,7 @@ Step 7 - Now We need to Push our buildspec.yml into CodeCommit Repository
 ```sh
 git status
 git add .
-git commit -m "my html file"
+git commit -m "my buildspec file"
 git push origin master
 ``` 
 
