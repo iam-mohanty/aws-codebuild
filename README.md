@@ -27,3 +27,9 @@ Step 5 -  Service Role  --->  New Service Role
 ```sh
 codebuild-m-service-role
 ```
+
+Srep 6 -  Buildspec  --->  Use a buildspec file
+
+```sh
+buildspec.yml
+```
