@@ -67,6 +67,9 @@ git commit -m "my buildspec file"
 git push origin master
 ``` 
 
+Go to your repo, we can see our buildspec.yml file is also available here.
+
+
 Step 8 - Artifacts  --->  Create an S3 Bucket
 
 ```sh
@@ -80,3 +83,5 @@ Untik CloudWatch Logs
 
 Step 9 - Click on start build.
 
+
+Go to your bucket, we can see our build file is also available here.
