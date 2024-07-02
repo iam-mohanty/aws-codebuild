@@ -8,3 +8,9 @@ Step 2 - Project name
 my-app-build
 ```
 
+Step 3 - Source provider and Repository
+
+```sh
+AWS-CodeCommit
+my-app
+```
