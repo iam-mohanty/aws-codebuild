@@ -1,6 +1,6 @@
 # AWS-CodeBuild
 
-Step 1 - Beside your repo, click on Build--> Build Projects-->create build project👩🏾‍🔧
+Step 1 - Beside your repo, click on Build  --->  Build Projects  --->  create build project👩🏾‍🔧
 
 Step 2 - Project name
 
@@ -28,8 +28,46 @@ Step 5 -  Service Role  --->  New Service Role
 codebuild-m-service-role
 ```
 
-Srep 6 -  Buildspec  --->  Use a buildspec file
+Step 6 -  Buildspec  --->  Use a buildspec file
 
 ```sh
 buildspec.yml
 ```
+
+In buildspec, you need to create a YAML file 
+
+```sh
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing NGINX
+      - sudo apt-get update
+      - sudo apt-get install nginx -y
+  build:
+    commands:
+      - echo Build started on `date`
+      - cp index.html /var/www/html/
+  post_build:
+    commands:
+      - echo Configuring NGINX
+
+artifacts:
+  files:
+    - '**/*'
+```
+
+Step 7 - Artifacts  --->  Create an S3 Bucket
+
+```sh
+my-app-bucket-24
+
+Name = mybuild
+
+Artifacts packaging = .zip
+```
+Untik CloudWatch Logs
+
+Step 8 - Click on start build.
+
